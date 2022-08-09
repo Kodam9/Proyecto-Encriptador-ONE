@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador Martin Costa Daddato</title>
+        <html lang="es">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta name="viewport" content="initial-scale=1">
+        <meta name="viewport" content="width=device-width">
+        
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body id="body">
+        <header>
+            <div class="divHeader">
+                <button id="botonNight" style="border: 1px solid #FFFFFF;" onclick="modoOscuro()">Modo Oscuro</button>
+                <button id="botonNight" style="background-color: #FFFFFF; color: #444;"  onclick="modoClaro()">Modo Claro</button>
+                <h2><img src="alura_logo-removebg-preview.png" alt="Alura"></h2>
+            </div>
+        </header>
+    </section>
+        <div class="areaResultado">
+            <img src="lupa_buscando-removebg-preview.png" alt="buscandoLupa" id="lupaBuscando">
+            <p id="noEncontrado">Ningun mensaje fue encontrado</p>
+            <p id="textoEncriptado">Ingresa el texto que desees encriptar o desencriptar</p>
+            <button id="botonCopiar" onclick="copiarMensaje()">Copiar mensaje</button>
+        </div>
+    <section>
+        <section >
+            <form class="encriptador">
+                    <input type="text" name="campoEncriptador" id="campoEncriptador" placeholder="Ingrese su texto aquí" minlength="1">
+                <p id="disclaimer">&laquo Ingrese solo letras minúsculas &raquo</p>
+                <button onclick="reload()" class="refrescar">Refrescar</button>
+                <div class="botones">
+                    <input type="submit" value="Encriptar" class="encriptar" onclick="encriptar()">
+                    <input type="submit" value="Desencriptar" class="desencriptar" onclick="desencriptar()">
+                </div>
+                
+            </form>
+            
+        </section>
+        
+    </body>
+
+    <script src="encriptador.js"></script>
+</html>
